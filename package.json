@@ -1,0 +1,28 @@
+{
+  "name": "medstocksy-landing",
+  "version": "1.0.0",
+  "description": "MedStocksy Landing Page - Pharmacy CRM & Inventory Management",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static site - no build required'",
+    "start": "serve .",
+    "audit": "node performance-audit.js",
+    "lighthouse": "lighthouse https://app.medstocksy.in --view",
+    "optimize:images": "npx imagemin assets/logo/*.png --out-dir=assets/logo/optimized",
+    "optimize:tailwind": "npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p"
+  },
+  "keywords": [
+    "pharmacy",
+    "crm",
+    "inventory",
+    "medstocksy",
+    "landing-page",
+    "performance",
+    "optimization"
+  ],
+  "author": "MedStocksy Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

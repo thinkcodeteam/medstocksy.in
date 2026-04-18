@@ -1,0 +1,49 @@
+# Medstocksy Pharmacy Management Software - robots.txt
+# Production configuration for Google, Bing, and other search engines
+
+# Default rules for all bots
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/
+
+# Allow crawling of specific important pages
+Allow: /assets/about.html
+Allow: /assets/blog.html
+Allow: /assets/blog-*.html
+Allow: /assets/contact.html
+
+# Disallow unnecessary files from indexing
+Disallow: /*.json$
+Disallow: /*.txt$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /vercel.json
+Disallow: /package.json
+
+# Allow search engines to read important metadata
+Allow: /manifest.json
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+
+# Specific rules for other crawlers
+User-agent: *
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# Sitemap location - PRIMARY SEO SIGNAL
+Sitemap: https://www.medstocksy.in/sitemap.xml
+
+# Additional information
+# Website: Pharmacy Management Software for Indian Retail Chemists
+# Contact: contact@medstocksy.in
+# Support: support@medstocksy.in
